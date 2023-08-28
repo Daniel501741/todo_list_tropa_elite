@@ -1,0 +1,12 @@
+<h1>Lista de Tarefas</h1>
+<ul>
+  <% tarefas.forEach(function(tarefa) { %>
+    <li><%= tarefa.titulo %></li>
+      <% }); %>
+</ul>
+<form class="forms" action="/tarefas" method="POST">
+
+  <input type="text" name="title" placeholder="Nova Tarefa" />
+  <button type="submit">Adicionar</button>
+
+</form>
